@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "736943004720",
+    "project_id": "fitness-app-ayoub",
+    "storage_bucket": "fitness-app-ayoub.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736943004720:android:4b91a55de4e56186a0e1f5",
+        "android_client_info": {
+          "package_name": "com.example.fitness_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqd5FKgwsNEehu7cxXCsdKTLTaVnoJCGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
