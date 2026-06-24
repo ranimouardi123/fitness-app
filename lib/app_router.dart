@@ -16,6 +16,7 @@ import 'screens/coach/prog_simple_screen.dart';
 import 'screens/coach/tracker_screen.dart';
 import 'screens/coach/suivi_mensuel_screen.dart';
 import 'screens/coach/coach_chat_screen.dart';
+import 'screens/coach/coach_ai_screen.dart';
 import 'screens/adherent/adherent_home_screen.dart';
 import 'screens/adherent/adherent_prog_view_screen.dart';
 import 'screens/adherent/adherent_tracking_screen.dart';
@@ -45,6 +46,7 @@ final appRouter = GoRouter(
 
     // ═══ COACH ═══
     GoRoute(path: '/coach', builder: (_, __) => const CoachDashboardScreen(), routes: [
+      GoRoute(path: 'ai', builder: (_, __) => const CoachAIScreen()),
       GoRoute(path: 'adherents', builder: (_, __) => const AdherentsScreen(), routes: [
         GoRoute(path: 'ajouter', builder: (_, __) => const AjouterAdherentScreen()),
         GoRoute(path: ':id/modifier',

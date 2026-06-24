@@ -46,28 +46,20 @@ class _LoginScreenState extends State<LoginScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 48),
-
-              // Logo
               Center(
                 child: Image.asset(
                   'assets/images/logo.png',
-                  width: 280,
-                  height: 220,
+                  width: 280, height: 220,
                   fit: BoxFit.contain,
                 ),
               ),
-
               const SizedBox(height: 32),
-
-              // Titre
               const Text('Connexion Coach',
                   style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: AppTheme.textPrimary)),
               const SizedBox(height: 6),
               const Text('Accédez à votre espace de gestion',
                   style: TextStyle(fontSize: 14, color: AppTheme.textSecondary)),
               const SizedBox(height: 36),
-
-              // Formulaire
               Form(
                 key: _formKey,
                 child: Column(children: [
@@ -106,8 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
                     child: _loading
-                        ? const SizedBox(
-                            height: 20, width: 20,
+                        ? const SizedBox(height: 20, width: 20,
                             child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
                         : const Text('Se connecter',
                             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
@@ -124,26 +115,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: const Text('Accès adhérent (code)',
                         style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
                   ),
-                ]),
-              ),
-              const SizedBox(height: 28),
-
-              // Compte par défaut
-              Container(
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFE8410A).withOpacity(0.06),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: const Color(0xFFE8410A).withOpacity(0.2)),
-                ),
-                child: const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text('Compte par défaut :',
-                      style: TextStyle(fontWeight: FontWeight.w600, color: AppTheme.textPrimary)),
-                  SizedBox(height: 4),
-                  Text('Email : coach@fitness.app',
-                      style: TextStyle(color: AppTheme.textSecondary)),
-                  Text('Mot de passe : coach123',
-                      style: TextStyle(color: AppTheme.textSecondary)),
                 ]),
               ),
               const SizedBox(height: 24),

@@ -39,6 +39,11 @@ class _CoachDashboardScreenState extends State<CoachDashboardScreen> {
             icon: const Icon(Icons.logout, color: AppTheme.noir),
             onPressed: () async { await AuthService().deconnexion(); if (mounted) context.go('/login'); },
           ),
+          IconButton(
+            icon: const Icon(Icons.psychology, color: AppTheme.orange),
+           onPressed: () => context.push('/coach/ai'),
+           tooltip: 'Assistant IA',
+          ),
         ],
       ),
       body: RefreshIndicator(
