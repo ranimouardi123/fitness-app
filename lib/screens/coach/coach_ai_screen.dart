@@ -22,7 +22,7 @@ class _CoachAIScreenState extends State<CoachAIScreen> {
   String? _nomAdherentSelectionne;
   List<Map<String, dynamic>> _adherents = [];
 
-  static const _groqKey = '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';
+  static const _groqKey = 'GROQ_KEY_PLACEHOLDER';
 
   static const _systemPrompt = '''Tu es un assistant expert en coaching sportif et nutrition pour Coach Ayoub - AM Coaching Sportif & Préparateur Physique.
 
